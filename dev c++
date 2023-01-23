@@ -1,0 +1,87 @@
+#include <math.h>
+#include <iostream>
+
+using namespace std;
+
+void imprime(int m, int n, float  mat[][50]);
+
+int main()
+{
+	float mat[50][50], p1, p2, p3, p4, p, x,y;
+	int m, n, k, j;
+	
+		cout << "Sistemas de Ecuaciones Gauss-Jordan" << endl;
+	cout << "Ingresa el numero de filas de la matriz  ";
+	cin >> m;
+	cout << "Ingresa el numero de columnas de la matriz  ";
+	cin >> n;
+	for(k=1; k<=m; k++)
+	{cout << "Dame los valores de la ecuacion o de la matriz  " << k << endl;
+	for(j=1;j<=n;j++)
+	cin >> mat[k][j];	
+	}
+		cout << "La matriz original es" << endl;
+	imprime(m, n, mat);
+	
+		p1=1/mat[1][1];
+	for(j=1;j<=n;j++)
+	mat[1][j]=p1*mat[1][j];
+	cout << "La matriz 1 es" << endl;
+	imprime(m, n, mat);
+	for(k=2;k<=m;k++)
+	{
+		p=-1*mat[k][1];
+		for(j=1;j<=n;j++)
+	{
+		mat[k][j]=(p*mat[1][j])+mat[k][j];
+	}
+	cout << "La matriz "<<k<<" es" << endl;
+	imprime(m, n, mat);
+	}
+	
+	    p1=1/mat[2][2];
+	for(j=1;j<=n;j++)
+	mat[2][j]=p1*mat[2][j];
+	cout << "La matriz 1 es" << endl;
+	imprime(m, n, mat);
+	for(k=3;k<=m;k++)
+	{
+		p=-1*mat[k][2];
+		for(j=1;j<=n;j++)
+	{
+		mat[k][j]=(p*mat[2][j])+mat[k][j];
+	}
+	cout << "La matriz "<<k<<" es" << endl;
+	imprime(m, n, mat);
+	}
+	
+	   p1=1/mat[3][3];
+	for(j=1;j<=n;j++)
+	mat[3][j]=p1*mat[3][j];
+	cout << "La matriz 1 es" << endl;
+	imprime(m, n, mat);
+	for(k=4;k<=m;k++)
+	{
+		p=-1*mat[k][3];
+		for(j=1;j<=n;j++)
+	{
+		mat[k][j]=(p*mat[3][j])+mat[k][j];
+	}
+	cout << "La matriz "<<k<<" es" << endl;
+	imprime(m, n, mat);
+	}
+	
+	return 0;
+}
+
+void imprime(int m, int n, float mat[][50])
+{
+	int k,j;
+	for(k=1;k<=m;k++)
+	{
+		for(j=1;j<=n;j++)
+		cout <<" " << mat[k][j] <<" ";
+		cout << endl;
+	}
+
+}
