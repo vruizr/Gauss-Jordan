@@ -10,8 +10,8 @@ int main()
 	float mat[50][50], p1, p2, p3, p4, p, x,y;
 	int m, n, k, j;
 	
-		cout << "Sistemas de Ecuaciones Gauss-Jordan" << endl;
-	cout << "Ingresa el numero de filas de la matriz  ";
+		cout << "Este programa resuelve Sistemas de Ecuaciones por medio del metodo Gauss-Jordan" << endl;
+	cout << "Ingresa el numero de filas de la matriz o bien el número de ecuaciones";
 	cin >> m;
 	cout << "Ingresa el numero de columnas de la matriz  ";
 	cin >> n;
