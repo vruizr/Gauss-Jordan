@@ -48,34 +48,20 @@ int main()
 		}
 		x[i]=p1/mat[i][i];
 	}
-	mat[2][j]=p1*mat[2][j];
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
-	for(k=3;k<=m;k++)
+	cout<<"La matriz es:"
+	for(i=0;i<n;i++)
 	{
-		p=-1*mat[k][2];
-		for(j=1;j<=n;j++)
+		for(j=0;j<n;j++)
 	{
-		mat[k][j]=(p*mat[2][j])+mat[k][j];
+		cout<<mat[i][j];
 	}
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
+	cout<<b[i]<<endl;
 	}
-	
-	   p1=1/mat[3][3];
-	for(j=1;j<=n;j++)
-	mat[3][j]=p1*mat[3][j];
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
-	for(k=4;k<=m;k++)
+
+	cout << "La solucion es:" << endl;
+	for(i=0;i<n;i++)
 	{
-		p=-1*mat[k][3];
-		for(j=1;j<=n;j++)
-	{
-		mat[k][j]=(p*mat[3][j])+mat[k][j];
-	}
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
+		cout<<x[i]<<endl;
 	}
 	
 	return 0;
