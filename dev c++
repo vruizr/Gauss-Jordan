@@ -16,7 +16,8 @@ int main()
 	cout << "Ingresa el numero de columnas de la matriz:"<<endl;
 	cin >> n;
 	for(k=1; k<=m; k++)
-	{cout << "Dame los valores de la ecuacion o de la matriz  " << k << endl;
+	{
+		cout << "Dame los coeficientes de la ecuacion " << k << " o de la fila "<< k << endl;
 	for(j=1;j<=n;j++)
 	cin >> mat[k][j];	
 	}
