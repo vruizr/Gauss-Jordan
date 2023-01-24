@@ -38,17 +38,16 @@ int main()
 	}
 	b[i]=b[i]-p*b[k];
 	}
-	
-	mat[1][j]=p1*mat[1][j];
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
-	
-	cout << "La matriz es:" << endl;
-	imprime(m, n, mat);
+	x[n-1]=b[n-1]/mat[n-1][n-1];
+	for(i=n-2;i>=0;i--)
+	{
+		p1=b[i];
+		for(j=i+1;j<n;j++)
+		{
+			p1=p1-mat[i][j]*x[j];
+		}
+		
 	}
-	
-	    p1=1/mat[2][2];
-	for(j=1;j<=n;j++)
 	mat[2][j]=p1*mat[2][j];
 	cout << "La matriz es:" << endl;
 	imprime(m, n, mat);
