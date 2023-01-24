@@ -3,7 +3,6 @@
 
 using namespace std;
 
-void imprime(int m, int n, float  mat[][50]);
 
 int main()
 {
@@ -38,6 +37,7 @@ int main()
 	}
 	b[i]=b[i]-p*b[k];
 	}
+	}
 	x[n-1]=b[n-1]/mat[n-1][n-1];
 	for(i=n-2;i>=0;i--)
 	{
@@ -65,16 +65,4 @@ int main()
 	}
 	
 	return 0;
-}
-
-void imprime(int m, int n, float mat[][50])
-{
-	int k,j;
-	for(k=1;k<=m;k++)
-	{
-		for(j=1;j<=n;j++)
-		cout <<" " << mat[k][j] <<" ";
-		cout << endl;
-	}
-
 }
