@@ -21,13 +21,13 @@ int main()
 	for(j=1;j<=n;j++)
 	cin >> mat[k][j];	
 	}
-		cout << "La matriz original es" << endl;
+		cout << "La matriz original es:" << endl;
 	imprime(m, n, mat);
 	
 		p1=1/mat[1][1];
 	for(j=1;j<=n;j++)
 	mat[1][j]=p1*mat[1][j];
-	cout << "La matriz 1 es" << endl;
+	cout << "La matriz 1 es:" << endl;
 	imprime(m, n, mat);
 	for(k=2;k<=m;k++)
 	{
@@ -36,14 +36,14 @@ int main()
 	{
 		mat[k][j]=(p*mat[1][j])+mat[k][j];
 	}
-	cout << "La matriz "<<k<<" es" << endl;
+	cout << "La matriz "<<k<<" es:" << endl;
 	imprime(m, n, mat);
 	}
 	
 	    p1=1/mat[2][2];
 	for(j=1;j<=n;j++)
 	mat[2][j]=p1*mat[2][j];
-	cout << "La matriz 1 es" << endl;
+	cout << "La matriz 1 es:" << endl;
 	imprime(m, n, mat);
 	for(k=3;k<=m;k++)
 	{
@@ -52,14 +52,14 @@ int main()
 	{
 		mat[k][j]=(p*mat[2][j])+mat[k][j];
 	}
-	cout << "La matriz "<<k<<" es" << endl;
+	cout << "La matriz "<<k<<" es:" << endl;
 	imprime(m, n, mat);
 	}
 	
 	   p1=1/mat[3][3];
 	for(j=1;j<=n;j++)
 	mat[3][j]=p1*mat[3][j];
-	cout << "La matriz 1 es" << endl;
+	cout << "La matriz 1 es:" << endl;
 	imprime(m, n, mat);
 	for(k=4;k<=m;k++)
 	{
@@ -68,7 +68,7 @@ int main()
 	{
 		mat[k][j]=(p*mat[3][j])+mat[k][j];
 	}
-	cout << "La matriz "<<k<<" es" << endl;
+	cout << "La matriz "<<k<<" es:" << endl;
 	imprime(m, n, mat);
 	}
 	
