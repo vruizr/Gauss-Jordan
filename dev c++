@@ -11,9 +11,9 @@ int main()
 	int m, n, k, j;
 	
 		cout << "Este programa resuelve Sistemas de Ecuaciones por medio del metodo Gauss-Jordan" << endl;
-	cout << "Ingresa el numero de filas de la matriz o bien el número de ecuaciones";
+	cout << "Ingresa el numero de filas de la matriz o bien el número de ecuaciones:"<<endl;
 	cin >> m;
-	cout << "Ingresa el numero de columnas de la matriz  ";
+	cout << "Ingresa el numero de columnas de la matriz:"<<endl;
 	cin >> n;
 	for(k=1; k<=m; k++)
 	{cout << "Dame los valores de la ecuacion o de la matriz  " << k << endl;
