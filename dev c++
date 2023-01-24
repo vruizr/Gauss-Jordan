@@ -7,8 +7,8 @@ void imprime(int m, int n, float  mat[][50]);
 
 int main()
 {
-	float mat[50][50], p1, p2, p3, p4, p, x,y;
-	int m, n, k, j;
+	float mat[50][50], b[50], x[50], p1, p;
+	int n, k, j, i;
 	
 		cout << "Este programa resuelve Sistemas de Ecuaciones por medio del metodo Gauss-Jordan" << endl;
 	cout << "Ingresa el numero de filas de la matriz o bien el número de ecuaciones:"<<endl;
