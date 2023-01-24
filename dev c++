@@ -13,7 +13,7 @@ int main()
 		cout << "Este programa resuelve Sistemas de Ecuaciones por medio del metodo Gauss-Jordan" << endl;
 	cout << "Ingresa el numero de filas de la matriz o bien el número de ecuaciones:"<<endl;
 	cin >> n;
-
+	cout << "Ingrese los coeficientes de las variables:"<<endl;
 	for(i=0; i<n; i++)
 	{
 	for(j=1;j<=n;j++)
@@ -21,8 +21,11 @@ int main()
 		cin >> mat[i][j];
 	}	
 	}
-		cout << "La matriz original es:" << endl;
-	imprime(m, n, mat);
+	cout << "Agrega los terminos independientes:" << endl;
+	for(i=0; i<n; i++)
+	{
+		cin>>b[i];
+	}
 	
 		p1=1/mat[1][1];
 	for(j=1;j<=n;j++)
