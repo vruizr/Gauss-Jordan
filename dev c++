@@ -27,18 +27,22 @@ int main()
 		cin>>b[i];
 	}
 	
-		p1=1/mat[1][1];
-	for(j=1;j<=n;j++)
+	for(k=1;k<n-1;k++)
+	{
+		for(i=k+1;i<n;i++)
+	{
+		p=mat[i][k]/mat[k][k];
+		for(j=k;j<n;j++)
+	{
+		mat[i][j]=mat[i][j]-p*mat[k][j];
+	}
+	b[i]=b[i]-p*b[k];
+	}
+	
 	mat[1][j]=p1*mat[1][j];
 	cout << "La matriz es:" << endl;
 	imprime(m, n, mat);
-	for(k=2;k<=m;k++)
-	{
-		p=-1*mat[k][1];
-		for(j=1;j<=n;j++)
-	{
-		mat[k][j]=(p*mat[1][j])+mat[k][j];
-	}
+	
 	cout << "La matriz es:" << endl;
 	imprime(m, n, mat);
 	}
