@@ -48,7 +48,7 @@ int main()
 		}
 		x[i]=p1/mat[i][i];
 	}
-	cout<<"La matriz es:"
+	cout<<"La matriz es:" << endl;
 	for(i=0;i<n;i++)
 	{
 		for(j=0;j<n;j++)
